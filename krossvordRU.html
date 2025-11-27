@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новогодний кроссворд</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      text-align: center;
+      padding: 20px;
+      color: #263238;
+    }
+    h1 {
+      color: #d32f2f;
+      text-shadow: 1px 1px 2px #fff;
+    }
+    .crossword {
+      display: inline-block;
+      margin: 20px auto;
+      border: 3px solid #1976d2;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .crossword td {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #1976d2;
+      text-align: center;
+      vertical-align: middle;
+      font-weight: bold;
+      font-size: 18px;
+      background-color: #ffffff;
+    }
+    .black {
+      background-color: #1976d2;
+    }
+    .clues {
+      max-width: 600px;
+      margin: 20px auto;
+      text-align: left;
+      padding: 15px;
+      background: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .clues h2 {
+      color: #1976d2;
+      margin-top: 20px;
+    }
+    .clue {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+    .word-list {
+      margin-top: 20px;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎄 Новогодний кроссворд 🎁</h1>
+
+  <!-- Сетка кроссворда 9x9 -->
+  <table class="crossword">
+    <tr>
+      <td>С</td><td>Н</td><td>Е</td><td>Г</td><td>О</td><td>В</td><td>И</td><td>К</td><td class="black"></td>
+    </tr>
+    <tr>
+      <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td>Р</td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+    </tr>
+    <tr>
+      <td>Ё</td><td>Л</td><td>К</td><td>А</td><td>О</td><td class="black"></td><td class="black"></td><td class="black"></td><td>М</td>
+    </tr>
+    <tr>
+      <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td>З</td><td>Д</td><td>Е</td><td>Д</td><td>О</td>
+    </tr>
+    <tr>
+      <td>Х</td><td>Л</td><td>О</td><td>П</td><td>У</td><td>Ш</td><td>К</td><td>А</td><td>Р</td>
+    </tr>
+    <tr>
+      <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td>О</td>
+    </tr>
+    <tr>
+      <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td>З</td>
+    </tr>
+    <tr>
+      <td>Г</td><td>И</td><td>Р</td><td>Л</td><td>Я</td><td>Н</td><td>Д</td><td>А</td><td class="black"></td>
+    </tr>
+    <tr>
+      <td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td><td class="black"></td>
+    </tr>
+  </table>
+
+  <div class="clues">
+    <h2>По горизонтали:</h2>
+    <div class="clue">1. Снеговик</div>
+    <div class="clue">3. Ёлка</div>
+    <div class="clue">5. Хлопушка</div>
+    <div class="clue">8. Гирлянда</div>
+
+    <h2>По вертикали:</h2>
+    <div class="clue">1. Снег</div>
+    <div class="clue">2. Новогодний символ с мешком подарков (в нашем кроссворде — Дед Мороз, но по вертикали: М-О-Р-О-З)</div>
+    <div class="clue">4. Подарок</div>
+    <div class="clue">6. Маска (в кроссворде не отображена, но входит в список тематических слов)</div>
+    <div class="clue">7. Санта (ассоциируется с Дедом Морозом)</div>
+  </div>
+
+  <div class="word-list">
+    <p><strong>Все 10 новогодних слов:</strong><br>
+    Снеговик, Ёлка, Хлопушка, Гирлянда, Снег, Мороз, Подарок, Маска, Санта, Дед</p>
+  </div>
+
+</body>
+</html>
