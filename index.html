@@ -1,30 +1,90 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Мой блог</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Обратная связь</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
 </head>
 <body>
- 
 
-  <p>Иконки:2026 год <a href="https://www.flaticon.com/ru/free-icons/2026" title="2026 иконки">2026 иконки от Freepik - Flaticon</a> - Flaticon</a></p>
-  <body>
-    <h2> дату сегодня , 2025</h2>
-    <img src=“Icons/имя <a href="https://www.flaticon.com/ru/free-icons/2026" title="2026 иконки">2026 иконки от Freepik - Flaticon</a>” alt=“Новый год”>
-    Поздравление с Наступающим 2026 годом читайте <a href=“Congratulations2026.html”> здесь.</a>
-    <h2> 15 октября , 2025</h2>
-    <p>Я сделала Новогодние кроссворды для сайта <a href=“http://адрес сайта друга”  title=“Блог моего друга”Сайт моего друга</a>
-    </p>
-  <h2> 1 сентября , 2025</h2>  
-<blockquote>Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote> 
-    <p>
-      Оставляю в прошлом скучную неинтересную локальную файловую систему ради Всемирной паутины.
-      </p>
- 
-    blockquote class=“q”>Путешествие в тысячу миль начинается с одного шага (Лао Цзы) </blockquote>
+  <div class="container">
+    <h1>Форма обратной связи</h1>
+    <form action="/submit-feedback" method="POST">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required>
 
-    <p>Иконки:2026 год 
-      <a href="https://www.flaticon.com/ru/free-icons/-" title="Рождественская елка иконки">Рождественская елка иконки от IconMarketPK - Flaticon</a>
-    </p>
-  </body>
-  
+      <label for="email">Электронная почта:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Тема сообщения:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+
+</body>
 </html>
